@@ -1,12 +1,23 @@
+manifestVersion: 1
+
 id: wiktac-node-agent
 name: WIKTAC Node Agent
 version: "0.1.0"
 category: Developer Tools
-tagline: Self-healing node monitor
+
 description: >
-  Self-healing node monitor with payout integrity enforcement.
+  Self-healing node monitor and payout integrity enforcement agent.
+
 developer: WIKTAC
 website: https://github.com/MAXXIMUXX99/wiktac-umbrel-store2
 repo: https://github.com/MAXXIMUXX99/wiktac-umbrel-store2
 support: https://github.com/MAXXIMUXX99/wiktac-umbrel-store2/issues
-port: 8080
+
+dependencies: []
+
+containers:
+  - name: agent
+    image: ghcr.io/maxximuxx99/wiktac-node-agent:latest
+    ports:
+      - internal: 8080
+        external: 8080
