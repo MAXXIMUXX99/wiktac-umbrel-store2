@@ -1,0 +1,16 @@
+id: wiktac-node-agent
+name: WIKTAC Node Agent
+tagline: Self-healing node monitor + payout integrity enforcement
+category: Developer Tools
+version: 0.1.1
+port: 3180
+description: >
+  CIA-style tactical dashboard for BTC/BCH/DGB node health, log intel, and payout integrity.
+  Includes a safe auto-repair loop (Plan→Act→Observe→Fix) with mining failsafe.
+developer: WIKTAC
+website: https://github.com/MAXXIMUXX99/wiktac-umbrel-store
+submitter: MAXXIMUXX99
+repo: https://github.com/MAXXIMUXX99/wiktac-umbrel-store
+support: https://github.com/MAXXIMUXX99/wiktac-umbrel-store/issues
+gallery: []
+dependencies: []

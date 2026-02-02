@@ -1,0 +1,44 @@
+version: "3.8"
+
+services:
+  dockerproxy:
+    image: tecnativa/docker-socket-proxy:latest
+    restart: unless-stopped
+    environment:
+      CONTAINERS: 1
+      POST: 1
+      INFO: 1
+      PING: 1
+      VERSION: 1
+      SERVICES: 0
+      TASKS: 0
+      NETWORKS: 0
+      VOLUMES: 0
+      IMAGES: 0
+      AUTH: 0
+      SECRETS: 0
+      CONFIGS: 0
+      EXEC: 0
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+
+  agent:
+    build:
+      context: ./agent
+    restart: unless-stopped
+    environment:
+      TICK_SECONDS: "30"
+      ARMED_MODE: "true"
+      FAILSAFE_STOP_MINING: "true"
+      DOCKER_PROXY_URL: "http://dockerproxy:2375"
+      LISTEN_HOST: "0.0.0.0"
+      LISTEN_PORT: "3180"
+    volumes:
+      - wiktac_data:/data
+    ports:
+      - "3180:3180"
+    depends_on:
+      - dockerproxy
+
+volumes:
+  wiktac_data:

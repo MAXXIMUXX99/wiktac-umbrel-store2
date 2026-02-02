@@ -1,0 +1,4 @@
+id: wiktac
+name: WIKTAC Tactical Store
+apps:
+  - wiktac-node-agent
