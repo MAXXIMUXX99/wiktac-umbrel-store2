@@ -8,9 +8,9 @@ description: >
   CIA-style tactical dashboard for BTC/BCH/DGB node health, log intel, and payout integrity.
   Includes a safe auto-repair loop (Plan→Act→Observe→Fix) with mining failsafe.
 developer: WIKTAC
-website: https://github.com/MAXXIMUXX99/wiktac-umbrel-store
+website: https://github.com/MAXXIMUXX99/wiktac-umbrel-store2
 submitter: MAXXIMUXX99
-repo: https://github.com/MAXXIMUXX99/wiktac-umbrel-store
-support: https://github.com/MAXXIMUXX99/wiktac-umbrel-store/issues
+repo: https://github.com/MAXXIMUXX99/wiktac-umbrel-store2
+support: https://github.com/MAXXIMUXX99/wiktac-umbrel-store2/issues
 gallery: []
 dependencies: []
