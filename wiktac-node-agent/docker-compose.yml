@@ -23,10 +23,8 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock:ro
 
   agent:
-    build:
-      context: ./agent
+    image: ghcr.io/maxximuxx99/wiktac-node-agent:0.1.2
     restart: unless-stopped
-    command: ["uvicorn", "wiktac_agent.wiktac_agent:app", "--host", "0.0.0.0", "--port", "3180", "--log-level", "info"]
     environment:
       TICK_SECONDS: "30"
       ARMED_MODE: "true"

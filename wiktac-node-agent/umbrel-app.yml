@@ -2,7 +2,7 @@ id: wiktac-node-agent
 name: WIKTAC Node Agent
 tagline: Self-healing node monitor + payout integrity enforcement
 category: Developer Tools
-version: 0.1.1
+version: 0.1.2
 port: 3180
 description: >
   CIA-style tactical dashboard for BTC/BCH/DGB node health, log intel, and payout integrity.
